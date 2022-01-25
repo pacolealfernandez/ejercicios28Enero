@@ -7,9 +7,32 @@
 <?php
 
 include 'funciones.php';
+
+#Formulario
+
 $id=$_POST["vuelo"];
 
-mediavuelo($duracion,$id);
+#Llamar funciones
+
+#Compañia
+
+compañia ($compañia,$id);
+
+#Media Pasajeros
+    
+mediaPasajeros($pasajeros,$id);
+
+#Últimos destinos
+
+ultDestinos ($destino,$id);
+
+#Frabricante
+
+fabricante ($fabricante,$id);
+
+#Minutos totales
+
+minutosTotales ($duracion,$id);
 
 ?>
 </body>

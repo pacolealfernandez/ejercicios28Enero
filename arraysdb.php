@@ -3,28 +3,30 @@
 #destino
 
 $destino=array(
-    "Vueling-AE12" => "Milán",
-    "Volotea-EA21" => "Roma",
-    "Iberia-WE44" => "Estambul",
-    "Ryanair-EW44" => "Madrid",
-    "Vueling-ZK87" => "Lima",
-    "Volotea-UA21" => "Bilbao",
-    "Iberia-WH44" => "Roma",
-    "Ryanair-EL00" => "Madrid",
-    "Vueling-AE12" => "Roma",
-    "Volotea-EA21" => "Roma");
+    array("Vuelo"=>"Vueling-AE12","Destino"=>"Milán"),
+    array("Vuelo"=>"Volotea-EA21","Destino"=>"Roma"),
+    array("Vuelo"=>"Iberia-WE44","Destino"=>"Estambul"),
+    array("Vuelo"=>"Ryanair-EW44","Destino"=>"Madrid"),
+    array("Vuelo"=>"Vueling-ZK87","Destino"=>"Lima"),
+    array("Vuelo"=>"Volotea-UA21","Destino"=>"Bilbao"),
+    array("Vuelo"=>"Iberia-WH44","Destino"=>"Roma"),
+    array("Vuelo"=>"Ryanair-EL00","Destino"=>"Madrid"),
+    array("Vuelo"=>"Vueling-AE12","Destino"=>"Roma"),
+    array("Vuelo"=>"Volotea-EA21","Destino"=>"Roma")
+);
 
 #fabricanteAvion
 
 $fabricante=array(
-    "Vueling-AE12" => "Boeing",
-    "Volotea-EA21" => "Airbus",
-    "Iberia-WE44" => "Airbus",
-    "Ryanair-EW44" => "Boeing",
-    "Vueling-ZK87" => "Airbus",
-    "Volotea-UA21" => "Boeing",
-    "Iberia-WH44" => "Boeing",
-    "Ryanair-EL00" => "Airbus");
+    array("Vuelo"=>"Vueling-AE12","Fabricante"=>"Boeing"),
+    array("Vuelo"=>"Volotea-EA21","Fabricante"=>"Airbus"),
+    array("Vuelo"=>"Iberia-WE44","Fabricante"=>"Airbus"),
+    array("Vuelo"=>"Ryanair-EW44","Fabricante"=>"Boeing"),
+    array("Vuelo"=>"Vueling-ZK87","Fabricante"=>"Airbus"),
+    array("Vuelo"=>"Volotea-UA21","Fabricante"=>"Boeing"),
+    array("Vuelo"=>"Iberia-WH44","Fabricante"=>"Boeing"),
+    array("Vuelo"=>"Ryanair-EL00","Fabricante"=>"Airbus")
+);
 
 #duracionViaje
 
@@ -42,18 +44,6 @@ $duracion=array(
     array("Vuelo"=>"Iberia-WE44","Tiempo"=>"85"),
     array("Vuelo"=>"Ryanair-EW44","Tiempo"=>"360")
 );
-    /*"Vueling-AE12" => "120",
-    "Volotea-EA21" => "100",
-    "Iberia-WE44" => "340",
-    "Ryanair-EW44" => "45",
-    "Vueling-ZK87" => "600",
-    "Volotea-UA21" => "65",
-    "Iberia-WH44" => "90",
-    "Ryanair-EL00" => "50",
-    "Vueling-AE12" => "115",
-    "Volotea-EA21" => "100",
-    "Iberia-WE44" => "85",
-    "Ryanair-EW44" => "360");*/
 
 #numeroPasajeros
 
@@ -80,38 +70,16 @@ $pasajeros=array(
     array("Vuelo"=>"Ryanair-EW44","Pasajeros"=>"77"),
     array("Vuelo"=>"Vueling-ZK87","Pasajeros"=>"82")
 );
-    /*"Vueling-AE12" => "90",
-    "Volotea-EA21" => "75",
-    "Iberia-WE44" => "100",
-    "Ryanair-EW44" => "60",
-    "Vueling-ZK87" => "77",
-    "Volotea-UA21" => "93",
-    "Iberia-WH44" => "86",
-    "Ryanair-EL00" => "75",
-    "Vueling-AE12" => "87",
-    "Volotea-EA21" => "97",
-    "Iberia-WE44" => "81",
-    "Ryanair-EW44" => "75",
-    "Vueling-ZK87" => "87", 
-    "Volotea-UA21" => "90",
-    "Iberia-WH44" => "84",
-    "Ryanair-EL00" => "67",
-    "Vueling-AE12" => "86",
-    "Volotea-EA21" => "66",
-    "Iberia-WE44" => "40",
-    "Ryanair-EW44" => "77",
-    "Vueling-ZK87" => "82");*/
-/*
-    $count=0;
-    $numero=0;
-    foreach ($duracion as $vuelo) {
-        $tiempo=$vuelo["Tiempo"];
-        $nvuelo=$vuelo["Vuelo"];
 
-        if ($nvuelo == $id) {
-            $numero=$numero+$tiempo;
-        }
-    }
-echo $numero;*/
+    $compañia=array(
+    array("Vuelo"=>"Vueling-AE12","Compañia"=>"Vueling"),
+    array("Vuelo"=>"Volotea-EA21","Compañia"=>"Volotea"),
+    array("Vuelo"=>"Iberia-WE44","Compañia"=>"Iberia"),
+    array("Vuelo"=>"Ryanair-EW44","Compañia"=>"Ryanair"),
+    array("Vuelo"=>"Vueling-ZK87","Compañia"=>"Vueling"),
+    array("Vuelo"=>"Volotea-UA21","Compañia"=>"Volotea"),
+    array("Vuelo"=>"Iberia-WH44","Compañia"=>"Iberia"),
+    array("Vuelo"=>"Ryanair-EL00","Compañia"=>"Ryanair")
+    );
 
 ?>
