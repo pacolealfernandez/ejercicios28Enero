@@ -8,11 +8,23 @@
 
 include 'funciones.php';
 
+#Llamar Funciones
+
 #Número totales de ciudades visitadas
 
 destinos ($destino);
 
-nCiudades ($destino);
+#Veces que se ha ido a una ciudad.
+
+visitas ($destino);
+
+#Ciudad mas visitada 
+
+maxvisitas ($destino);
+
+#Ciudades menos visitada
+
+minvisitas ($destino);
 
 ?>
 </body>
