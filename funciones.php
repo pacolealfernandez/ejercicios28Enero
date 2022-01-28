@@ -171,4 +171,51 @@ function minConexiones ($destino){
     }
 }
 
+#Destinos
+
+function destino ($destino,$id){
+    echo "Los destinos de este vuelo son: ";
+    foreach ($destino as $ultdest) {
+           $ultimo=$ultdest["Destino"];
+           $nvuelo=$ultdest["Vuelo"];
+           if ($nvuelo == $id) {
+              echo $ultimo.", ";
+            }
+    }
+    echo "<br>";
+    }
+
+#Media de horas voladas total
+
+function mediaHorasvo ($duracion,$id){
+    $i=0;
+    $numero=0;
+        foreach ($duracion as $tiemp) {
+            $tempo=$tiemp["Tiempo"];
+            $nvuelo=$tiemp["Vuelo"];            
+           if ($nvuelo == $id) {
+            $numero=$numero+$tempo;
+            $i++;
+            
+            }
+        }
+        $total=$numero/$i;
+        $horas = $total/60;
+    echo "La media de horas de todos los vuelos son: ". $horas . "h" ."<br>";
+}
+
+#Media pasajeros
+
+function pasajerosTotales ($pasajeros,$id){
+    $numero=0;
+        foreach ($pasajeros as $pasaje) {
+            $pasajero=$pasaje["Pasajeros"];
+            $nvuelo=$pasaje["Vuelo"];
+            if ($nvuelo == $id) {
+                $numero=$numero+$pasajero;
+        }
+    }
+    echo "Los pasajeros totales son: ". $numero."<br>";
+    }
+
 ?>
